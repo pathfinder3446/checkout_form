@@ -1,0 +1,112 @@
+/* email :          <i class="fa-solid fa-envelope"></i>
+phone:         <i class="fa-solid fa-phone"></i>
+user:            <i class="fa-solid fa-user"></i>
+adress:        <i class="fa-solid fa-house"></i>
+city:             <i class="fa-regular fa-city"></i>
+Postal C.:    <i class="fa-solid fa-envelopes-bulk"></i>
+country:     <i class="fa-solid fa-earth-europe"></i> */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+section {
+    width: 26rem;
+    /* opacity: 0.8; */
+}
+
+.mail{
+    width: 90%;
+    padding: 6px;
+    border: solid 1.8px gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+section form h2 {
+    padding: 6px;
+}
+
+.mail input{
+    width: 90%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding: 3px;
+}
+
+label{
+    display: inline-block;
+    padding: 6px;
+}
+
+.shipping{
+    margin-top: 3rem;
+}
+
+.country-post{
+    display: flex;
+}
+
+.country-post label{
+    display: block;
+    padding: 3px;
+}
+
+.country select{
+    height: 2rem;
+    display: inline-block;
+    width: 7rem;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.country{
+    margin-right: 10px;
+}
+
+.post{
+    width: 60%;
+}
+
+.country i{
+    position: relative;
+    left: -7rem;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+
+.checkbox label{
+    margin-left: 1.2rem;
+}
+
+.submit{
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+}
+.submit input{
+    background-color: #F2994A;
+    font-size: medium;
+    height: 2.8rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+}
+
+i,label {
+    color: #828282;
+}
