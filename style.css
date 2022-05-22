@@ -8,105 +8,249 @@ country:     <i class="fa-solid fa-earth-europe"></i> */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: montserrat;
-}
-
-section {
-    width: 26rem;
-    /* opacity: 0.8; */
-}
-
-.mail{
-    width: 90%;
-    padding: 6px;
-    border: solid 1.8px gray;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-section form h2 {
-    padding: 6px;
-}
-
-.mail input{
-    width: 90%;
-    margin-left: 10px;
-    border: none;
-    outline: none;
-    padding: 3px;
-}
-
-label{
-    display: inline-block;
-    padding: 6px;
-}
-
-.shipping{
-    margin-top: 3rem;
-}
-
-.country-post{
-    display: flex;
-}
-
-.country-post label{
-    display: block;
-    padding: 3px;
-}
-
-.country select{
-    height: 2rem;
-    display: inline-block;
-    width: 7rem;
-    border-radius: 5px;
-    text-align: center;
 
 }
 
-.country{
-    margin-right: 10px;
+@media screen and (max-width: 1450px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 3rem;
+    }
+
+    .sections {
+        display: flex;
+    }
+
+
+
+    section {
+        width: 26rem;
+        /* opacity: 0.8; */
+    }
+
+    .mail {
+        width: 90%;
+        padding: 6px;
+        border: solid 1.4px gray;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 5px 0 7px;
+    }
+
+    section form h2 {
+        padding: 6px;
+    }
+
+    .mail input {
+        width: 90%;
+        margin-left: 10px;
+        border: none;
+        outline: none;
+        padding: 3px;
+    }
+
+    label {
+        display: inline-block;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .shipping {
+        margin-top: 3rem;
+    }
+
+    .country-post {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .country-post label {
+        display: block;
+        padding: 6px;
+
+    }
+
+    .country select {
+        height: 2.3rem;
+        display: inline-block;
+        width: 7rem;
+        border-radius: 5px;
+        text-align: center;
+        border-color: gray;
+        padding: 3px;
+        /* margin-top: 4px; */
+
+    }
+
+    .country {
+        margin-right: 10px;
+        margin-top: 0;
+    }
+
+    .post {
+        width: 60%;
+    }
+
+    .country i {
+        position: relative;
+        left: -7rem;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+
+    }
+
+    .checkbox label {
+        margin-left: 1.2rem;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: end;
+        margin-right: 2rem;
+    }
+
+    .submit input {
+        background-color: #F2994A;
+        font-size: 12px;
+        font-weight: bold;
+        height: 2.8rem;
+        width: 5rem;
+        border-radius: 0.5rem;
+        border: none;
+        color: white;
+    }
+
+    i,
+    label {
+        color: #828282;
+    }
+
+    .shopping-cart {
+        width: 20rem;
+        height: 24rem;
+        padding: 0.8rem 1.3rem;
+        background-color: #eeeeee;
+        border-radius: 0.8rem;
+        margin-left: 2rem;
+    }
+
+    img {
+        height: 6.8rem;
+        width: 6rem;
+        border-radius: 1rem;
+    }
+
+    .product {
+        display: flex;
+        margin-bottom: 1.6rem;
+        color: #4E5150;
+    }
+
+    .price {
+        margin: 0rem 1.5rem;
+    }
+
+    .current-price {
+        display: inline-block;
+        color: #f2994a;
+    }
+
+    .price p {
+        display: inline-block;
+    }
+
+    .number {
+        display: flex;
+        border: 2px solid #a7a4a4;
+        height: 2.4rem;
+        width: 6.4rem;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        border-radius: 5px;
+    }
+
+    .number button {
+        width: 20.5px;
+        height: 25px;
+        margin: 0.5rem;
+        background-color: #e0e0e0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .number button i {
+        color: black;
+    }
+
+    .shipping-total {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info {
+        margin-top: 4rem;
+    }
+
+    .info p {
+        color: black;
+    }
+
 }
 
-.post{
-    width: 60%;
-}
+@media only screen and (max-width: 540px) {
+    .sections {
+        display: flex;
+        flex-direction: column-reverse;
 
-.country i{
-    position: relative;
-    left: -7rem;
-}
+    }
 
-.checkbox{
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    
-}
+    section form {
+        margin-top: 3rem;
+    }
 
-.checkbox label{
-    margin-left: 1.2rem;
-}
+    .submit {
+        justify-content: center;
+        margin-top: 1rem;
+    }
 
-.submit{
-    display: flex;
-    justify-content: end;
-    margin-right: 2rem;
-}
-.submit input{
-    background-color: #F2994A;
-    font-size: medium;
-    height: 2.8rem;
-    width: 5rem;
-    border-radius: 0.5rem;
-    border: none;
-    color: white;
-}
+    .submit input {
+        width: 12rem;
+    }
 
-i,label {
-    color: #828282;
-}
+    .shopping-cart {
+        width: 24rem;
+        height: 24rem;
+        margin: 0;
+    }
+
+    .country-post{
+        display: inline-block;
+    }
+
+    .country-post div{
+        margin: 10px 0;
+    }
+
+    .post{
+        width: 25rem;
+    }
