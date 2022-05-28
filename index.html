@@ -86,7 +86,7 @@
 
 
         <section class="shopping-cart">
-            <div class="product">
+            <div class="product" id="product1">
               <img src="images/photo1.png" alt="" />
   
               <div class="price">
@@ -97,13 +97,14 @@
                 </p>
   
                 <div class="number">
-                  <button><i class="fa-solid fa-minus"></i></button>
-                  <p>1</p>
-                  <button><i class="fa-solid fa-plus"></i></button>
+                  <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                  <p class="value1">1</p>
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
                 </div>
+                <div class="remove" id="remove1">Remove</div>
               </div>
             </div>
-            <div class="product">
+            <div class="product" id="product2">
               <img src="images/photo2.png" alt="" />
   
               <div class="price">
@@ -114,10 +115,11 @@
                 </p>
   
                 <div class="number">
-                  <button><i class="fa-solid fa-minus"></i></button>
-                  <p>1</p>
-                  <button><i class="fa-solid fa-plus"></i></button>
+                  <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                  <p class="value2">1</p>
+                  <button class="plus"><i class="fa-solid fa-plus"></i></button>
                 </div>
+                <div class="remove" id="remove2">Remove</div>
               </div>
             </div>
             <div class="info">
@@ -128,13 +130,14 @@
               </div>
               <hr />
               <div class="shipping-total">
-                <p>Total</p>
+                <p class="total1">Total</p>
                 <p>$148.98</p>
               </div>
             </div>
           </section>
         </div>
     </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
